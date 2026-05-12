@@ -15,8 +15,8 @@ services:
     ports:
       - ${DIRECTUS_PORT}:8055
     volumes:
-      - ./uploads:/directus/uploads
-      - ./extensions:/directus/extensions
+      - ./uploads:/uploads
+      - ./extensions:/extensions
     depends_on:
       cache:
         condition: service_healthy
