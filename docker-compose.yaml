@@ -13,7 +13,7 @@ services:
   directus:
     build: .
     ports:
-      - ${DIRECTUS_PORT}:8056
+      - ${DIRECTUS_PORT}:8055
     volumes:
       - ./uploads:/directus/uploads
       - ./extensions:/directus/extensions
