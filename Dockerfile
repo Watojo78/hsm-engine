@@ -15,7 +15,7 @@ WORKDIR /directus
 # RUN pnpm install @directus-labs/spreadsheet-layout
 
 # Expose the default Directus port
-EXPOSE 8055
+EXPOSE 8056
 
 # Command to start Directus (this is usually handled by the base image)
 # CMD ["node", "/directus/cli.js", "bootstrap", "&&", "node", "/directus/cli.js", "start"]

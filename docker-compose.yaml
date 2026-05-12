@@ -13,10 +13,10 @@ services:
   directus:
     build: .
     ports:
-      - ${DIRECTUS_PORT}:8055
+      - ${DIRECTUS_PORT}:8056
     volumes:
-      - ./uploads:/uploads
-      - ./extensions:/extensions
+      - ./uploads:/directus/uploads
+      - ./extensions:/directus/extensions
     depends_on:
       cache:
         condition: service_healthy
